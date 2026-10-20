@@ -1,0 +1,17 @@
+{
+  "name": "centro-de-ajuda",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prova de conceito de recomendação de serviços a partir de relatos multimodais",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node --env-file=.env server/index.js",
+    "test": "node test/server.test.js",
+    "benchmark": "node --env-file=.env benchmark/run.js"
+  },
+  "dependencies": {
+    "express": "5.2.1"
+  }
+}

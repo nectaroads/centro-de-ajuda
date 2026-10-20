@@ -1,0 +1,46 @@
+{
+  "models": [
+    {
+      "provider": "openai",
+      "text": "openai/gpt-5.5",
+      "audio": "openai/whisper-large-v3-turbo",
+      "image": "openai/gpt-5.5"
+    },
+    {
+      "provider": "anthropic",
+      "text": "anthropic/claude-opus-4.8",
+      "audio": null,
+      "image": "anthropic/claude-opus-4.8"
+    },
+    {
+      "provider": "meta-llama",
+      "text": "meta-llama/llama-4-maverick",
+      "audio": "meta/muse-spark-1.2",
+      "image": "meta-llama/llama-4-maverick"
+    },
+    {
+      "provider": "qwen",
+      "text": "qwen/qwen3.6-plus",
+      "audio": "qwen/qwen3-asr-flash-2026-02-10",
+      "image": "qwen/qwen3.6-plus"
+    },
+    {
+      "provider": "google",
+      "text": "google/gemini-3.5-flash",
+      "audio": "google/gemini-3.5-flash",
+      "image": "google/gemini-3.5-flash"
+    },
+    {
+      "provider": "nvidia",
+      "text": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "audio": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "image": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
+    }
+  ],
+  "emergencies": [
+    { "text": "Meu carro quebrou na estrada, estou no acostamento com minha mãe idosa e está escurecendo. Não sei se é seguro ficar aqui.", "audio": null, "image": null, "lat": -13.006421, "lon": -41.370269, "time": "2026-07-03T18:46:00-03:00" },
+    { "text": "Uma árvore caiu em cima de fios elétricos depois da chuva. Está soltando faísca e bloqueando a rua.", "audio": null, "image": "images/fio_arvore.jpg", "lat": -11.303889, "lon": -41.855833, "time": "2026-11-22T06:57:00-03:00" },
+    { "text": null, "audio": "audios/socorro_gato.ogg", "image": null, "lat": -12.978299, "lon": -39.248689, "time": "2026-04-30T02:27:00-03:00" },
+    { "text": null, "audio": "audios/alagamento_casa.ogg", "image": "images/alagamento_casa.jpg", "lat": -13.86, "lon": -40.083, "time": "2026-04-09T03:41:00-03:00" }
+  ]
+}

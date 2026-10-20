@@ -1,0 +1,122 @@
+# Model: google/gemini-3.5-flash
+{
+  "input": {
+    "text": "Meu carro quebrou na estrada, estou no acostamento com minha mãe idosa e está escurecendo. Não sei se é seguro ficar aqui.",
+    "audio": null,
+    "image": null,
+    "time": "2026-07-03T18:46:00-03:00",
+    "location": {
+      "street": "Avenida Principal",
+      "neighborhood": null,
+      "city": "Mucugê",
+      "state": "Bahia",
+      "country": "Brazil",
+      "zip": "46750-000"
+    }
+  },
+  "response": {
+    "content": {
+      "service_name": "Polícia Militar",
+      "phone_number": "190",
+      "emergency_context": "Veículo quebrado no acostamento de rodovia em Mucugê (BA) ao anoitecer, com passageira idosa, em situação de insegurança."
+    },
+    "cost": 0.014301,
+    "response_time_ms": 11348,
+    "prompt_tokens": 498,
+    "completion_tokens": 1506,
+    "total_tokens": 2004
+  }
+}
+
+
+# Model: google/gemini-3.5-flash
+{
+  "input": {
+    "text": "Uma árvore caiu em cima de fios elétricos depois da chuva. Está soltando faísca e bloqueando a rua.",
+    "audio": null,
+    "image": "images/fio_arvore.jpg",
+    "time": "2026-11-22T06:57:00-03:00",
+    "location": {
+      "street": "Rua Ângelo França Dourado",
+      "neighborhood": null,
+      "city": "Irecê",
+      "state": "Bahia",
+      "country": "Brazil",
+      "zip": "44900-000"
+    }
+  },
+  "response": {
+    "content": {
+      "service_name": "Neoenergia Coelba",
+      "phone_number": "116",
+      "emergency_context": "Queda de árvore sobre a fiação elétrica com presença de faíscas e obstrução de via pública na Rua Ângelo França Dourado, em Irecê."
+    },
+    "cost": 0.015819,
+    "response_time_ms": 12157,
+    "prompt_tokens": 1564,
+    "completion_tokens": 1497,
+    "total_tokens": 3061
+  }
+}
+
+
+# Model: google/gemini-3.5-flash
+{
+  "input": {
+    "text": null,
+    "audio": "audios/socorro_gato.ogg",
+    "image": null,
+    "time": "2026-04-30T02:27:00-03:00",
+    "location": {
+      "street": null,
+      "neighborhood": null,
+      "city": "Santo Antônio de Jesus",
+      "state": "Bahia",
+      "country": "Brazil",
+      "zip": null
+    }
+  },
+  "response": {
+    "content": {
+      "service_name": "HVETSAJ Hospital Veterinário 24h",
+      "phone_number": "(75) 98131-2208",
+      "emergency_context": "Atendimento emergencial para gato doméstico recém-atropelado em Santo Antônio de Jesus, Bahia"
+    },
+    "cost": 0.012633,
+    "response_time_ms": 21192,
+    "prompt_tokens": 633,
+    "completion_tokens": 1269,
+    "total_tokens": 1902
+  }
+}
+
+
+# Model: google/gemini-3.5-flash
+{
+  "input": {
+    "text": null,
+    "audio": "audios/alagamento_casa.ogg",
+    "image": "images/alagamento_casa.jpg",
+    "time": "2026-04-09T03:41:00-03:00",
+    "location": {
+      "street": "Rua da Itália",
+      "neighborhood": "Centro",
+      "city": "Jequié",
+      "state": "Bahia",
+      "country": "Brazil",
+      "zip": "45200-190"
+    }
+  },
+  "response": {
+    "content": {
+      "service_name": "Defesa Civil de Jequié",
+      "phone_number": "(73) 93505-0750",
+      "emergency_context": "Residência inundada decorrente de fortes chuvas em Jequié, com alagamento do imóvel, perda de bens e risco aos moradores."
+    },
+    "cost": 0.015636,
+    "response_time_ms": 10097,
+    "prompt_tokens": 1906,
+    "completion_tokens": 1360,
+    "total_tokens": 3266
+  }
+}
