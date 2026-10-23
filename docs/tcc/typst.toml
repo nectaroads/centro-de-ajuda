@@ -1,0 +1,12 @@
+[package]
+name = "ifba-saj-tcc"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Leandro Souza"]
+description = "Modelo ABNT para TCC do IFBA, campus Santo Antônio de Jesus (ADS), unindo as melhores práticas de diversos projetos Typst acadêmicos."
+license = "MIT"
+compiler = "0.15.1"
+repository = "https://github.com/typst-things/sourcecraft"
+categories = ["thesis"]
+keywords = ["ifba", "abnt"]
+exclude = ["tests/", "docs/", "gallery/"]
