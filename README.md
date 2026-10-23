@@ -6,6 +6,18 @@ Este repositório reúne o servidor da prova de conceito, os trechos do cliente 
 
 O resultado é uma recomendação. O sistema não despacha equipes nem faz ligações automaticamente. Os testes exploratórios sugerem potencial técnico, mas não medem eficácia ou segurança em emergências reais. Telefones locais produzidos pelo modelo precisam de confirmação em fonte oficial.
 
+## TCC e entrega final
+
+O [fonte completo do TCC](docs/tcc/) está neste repositório, junto do código da aplicação. O arquivo de entrada é [docs/tcc/_main.typ](docs/tcc/_main.typ), e o [PDF compilado](docs/tcc/_main.pdf) está na mesma pasta.
+
+Para gerar o PDF com Typst 0.15.1, execute na raiz do repositório:
+
+```sh
+typst compile docs/tcc/_main.typ docs/tcc/_main.pdf
+```
+
+As dependências e instruções de compilação estão em [docs/tcc/README.md](docs/tcc/README.md). A [release v1.0.0](https://github.com/nectaroads/centro-de-ajuda/releases/tag/v1.0.0) registra a entrega com o código, o fonte do trabalho e o PDF.
+
 ## Como funciona
 
 O servidor recebe `POST /help`, valida o relato e as coordenadas, consulta a geocodificação reversa do Google Maps e envia o contexto ao modelo escolhido no OpenRouter. A resposta contém `service_name`, `phone_number` e `emergency_context`.
@@ -62,7 +74,7 @@ Uma resposta estruturalmente válida tem este formato ilustrativo, sem represent
 
 ## Código e avaliação
 
-`server/` contém a rota, validações, prompts e integrações. `client/snippets/` preserva os trechos do TCC. `benchmark/` reúne os cenários, as entradas e o protocolo, separando material histórico de novas execuções. `docs/` apresenta a arquitetura e as limitações de privacidade.
+`server/` contém a rota, validações, prompts e integrações. `client/snippets/` preserva os trechos do TCC. `benchmark/` reúne os cenários, as entradas e o protocolo, separando material histórico de novas execuções. `docs/` reúne o fonte do TCC, a arquitetura e as limitações de privacidade.
 
 ```sh
 npm test
