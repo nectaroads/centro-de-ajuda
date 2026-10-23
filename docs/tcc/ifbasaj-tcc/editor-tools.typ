@@ -1,0 +1,2 @@
+#let equacao(body) = { math.equation(block: true, numbering: "(1)", body) }
+#let figura-equacao(body, caption: none) = figure(math.equation(block: true, numbering: "(1)", body), caption: caption, kind: math.equation, supplement: [Equação])
