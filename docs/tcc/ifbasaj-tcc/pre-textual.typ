@@ -166,24 +166,29 @@
     errata
     _fim-de-folha()
   }
-  heading(level: 1, numbering: none, outlined: false, bookmarked: true, hide[ Folha de aprovação])
-  if texto-aprovacao == none {
-    _single(_texto-aprovacao-pad)
-  } else if type(texto-aprovacao) == str {
-    page(margin: 0cm, header: none, footer: none, image(texto-aprovacao, width: 100%, height: 100%, fit: "contain"))
-  } else {
-    _single({
-      set par(justify: true)
-      texto-aprovacao
-      v(3cm)
-      set align(center)
-      for member in banca {
-        v(1.2cm)
-        line(length: 10cm, stroke: 0.5pt)
-        member
-        parbreak()
-      }
+  if type(texto-aprovacao) == str {
+    page(margin: 0cm, header: none, footer: none, {
+      place(top + left, heading(level: 1, numbering: none, outlined: false, bookmarked: true, hide[ Folha de aprovação]))
+      image(texto-aprovacao, width: 100%, height: 100%, fit: "contain")
     })
+  } else {
+    heading(level: 1, numbering: none, outlined: false, bookmarked: true, hide[ Folha de aprovação])
+    if texto-aprovacao == none {
+      _single(_texto-aprovacao-pad)
+    } else {
+      _single({
+        set par(justify: true)
+        texto-aprovacao
+        v(3cm)
+        set align(center)
+        for member in banca {
+          v(1.2cm)
+          line(length: 10cm, stroke: 0.5pt)
+          member
+          parbreak()
+        }
+      })
+    }
   }
   _fim-de-folha()
   if dedicatoria != none {
