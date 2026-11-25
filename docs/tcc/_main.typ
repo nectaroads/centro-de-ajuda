@@ -15,7 +15,7 @@
   ),
   //ficha-catalografica: image("assets/ficha-exemplo.pdf", width: 100%, height: 100%, fit: "contain"),
   texto-aprovacao: "../assets/folha-aprovacao.pdf",
-  ficha-catalografica: [criação da ficha],
+  ficha-catalografica: "../assets/ficha-catalografica.pdf",
   bibliografia: read("referencias.bib"),
   versao-impressao: false,
 )
